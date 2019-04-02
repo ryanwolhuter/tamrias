@@ -1,0 +1,7 @@
+.container {
+  height: calc( 400vh);
+
+  section {
+    scroll-snap-align: end;
+  }
+}
