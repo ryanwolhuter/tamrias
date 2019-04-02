@@ -60,29 +60,43 @@
     position: absolute;
     top: 25vh;
     left: 60vw;
+    animation: 5s infinite alternate floating;
   }
 
   #hexagon-medium-two {
     position: absolute;
     top: 80vh;
     left: 5vw;
+    animation: 5s infinite alternate floating;
   }
 
   #hexagon-small-one {
     position: absolute;
     top: 15vh;
     left: 30vw;
+    animation: 5s infinite alternate floating;
   }
 
   #hexagon-small-two {
     position: absolute;
     top: 30vh;
     left: 10vw;
+    animation: 5s infinite alternate floating;
   }
 
   #hexagon-small-three {
     position: absolute;
     top: 75vh;
     left: 70vw;
+    animation: floating 5s infinite alternate;
+  }
+}
+
+@keyframes floating {
+  0%, 100% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(0, 10px);
   }
 }

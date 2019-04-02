@@ -10,12 +10,12 @@ export function Background() {
     useState(document.documentElement.scrollHeight);
 
   useEffect(() => {
-    document.addEventListener('resize', updateWidthAndHeight);
-    return document.removeEventListener('resize', updateWidthAndHeight);
-  }, [width, height]);
+    window.addEventListener('resize', updateWidthAndHeight);
+    return window.removeEventListener('resize', updateWidthAndHeight);
+  }, []);
 
-  function updateWidthAndHeight() {
-    setWidth(document.documentElement.clientWidth);
+  function updateWidthAndHeight(event:any) {
+    setWidth(event.target.innerWidth);
     setHeight(document.documentElement.scrollHeight);
   }
   
