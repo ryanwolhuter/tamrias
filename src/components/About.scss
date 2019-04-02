@@ -5,3 +5,10 @@
   justify-content: center;
   align-items: center;
 }
+
+.text {
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.8);
+
+}
