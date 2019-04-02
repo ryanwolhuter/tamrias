@@ -12,7 +12,7 @@ export function Background() {
   useEffect(() => {
     document.addEventListener('resize', updateWidthAndHeight);
     return document.removeEventListener('resize', updateWidthAndHeight);
-  }, []);
+  }, [width, height]);
 
   function updateWidthAndHeight() {
     setWidth(document.documentElement.clientWidth);
