@@ -11,4 +11,9 @@ body, html {
   height: 400vh;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
+  box-sizing: border-box;
+}
+
+section {
+  height: 100vh;
 }

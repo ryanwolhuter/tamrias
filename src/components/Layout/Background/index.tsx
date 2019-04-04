@@ -1,23 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Particles from 'react-particles-js';
+import { usePageDimensions } from '../../../PageDimensionsProvider';
 
 import './Background.scss';
 
-export function Background() {
-  const [width, setWidth] = 
-    useState(document.documentElement.clientWidth);
-  const [height, setHeight] = 
-    useState(document.documentElement.scrollHeight);
-
-  useEffect(() => {
-    window.addEventListener('resize', updateWidthAndHeight);
-    return window.removeEventListener('resize', updateWidthAndHeight);
-  }, []);
-
-  function updateWidthAndHeight(event:any) {
-    setWidth(event.target.innerWidth);
-    setHeight(document.documentElement.scrollHeight);
-  }
+export default function Background() {
+  
+  const { width, height } = usePageDimensions();
   
   return (
     <Particles
@@ -38,13 +27,17 @@ export function Background() {
             random: true,
             anim: {
               enable: false,
-              speed: 40,
-              size_min: 0.1,
-              sync: false
+            }
+          },
+          opacity: {
+            value: 0.6,
+            random: false,
+            anim: {
+              enable: false,
             }
           },
           move: {
-            enable: true,
+            enable: false,
             speed: 2,
             direction: 'top',
             random: true,

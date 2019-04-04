@@ -1,0 +1,35 @@
+.music-container {
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+  .description {
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.9);
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.8);
+  }
+}
+
+
+@media (min-width: 1025px) {
+  .music-container {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    gap: 175px;
+    align-items: center;
+  }
+  .description {
+    width: 350px;
+    margin: 0;
+    justify-self: end;
+  }
+
+  .bandcamp-container {
+    justify-self: start;
+  }
+}

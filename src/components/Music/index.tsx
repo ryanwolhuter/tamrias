@@ -1,12 +1,14 @@
 import React from 'react';
 import './Music.scss';
+import './BandcampPlayer';
+import BandcampPlayer from './BandcampPlayer';
 
-export function Music() {
+export default function Music() {
   return (
     <section id="music">
       <div className="music-container">
         <div className="description">
-          <h1>Tamrias Tunes</h1>
+          <h1>New Leaf</h1>
 
           <p>Tamrias is a classically-trained 
             electro-acoustic musician and producer 
@@ -25,6 +27,7 @@ export function Music() {
 
           <p><small>Mastered by Levi Thole</small></p>
         </div>
+        <BandcampPlayer />
       </div>
     </section>
   );

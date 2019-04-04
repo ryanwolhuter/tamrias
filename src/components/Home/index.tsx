@@ -1,16 +1,16 @@
 import React from 'react';
 import './Home.scss';
 
-export function Home() {
+export default function Home() {
   return (
     <section id="home">
       <div className="home-container">
 
           <header>
             <h1>Tamrias</h1>
-            <p>| Composition</p>
-            <p>| Production</p>
-            <p>| Recording</p>
+            <p>| audio engineer</p>
+            <p>| sound recordist</p>
+            <p>| music producer</p>
           </header>
 
 
@@ -54,6 +54,13 @@ export function Home() {
         </svg>
         <svg
           id="hexagon-small-three"
+          className="hexagon-small"
+          viewBox="0 0 33 37"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.97853 10.116L16.5 1.73205L31.0215 10.116V26.884L16.5 35.2679L1.97853 26.884V10.116Z" />
+        </svg>
+        <svg
+          id="hexagon-small-four"
           className="hexagon-small"
           viewBox="0 0 33 37"
           xmlns="http://www.w3.org/2000/svg">
