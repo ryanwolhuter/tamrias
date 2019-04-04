@@ -1,5 +1,5 @@
 .contact-container {
-  height: 100vh;
+  height: calc(100vh - (3rem + 15px));
   padding: 1rem;
   display: grid;
   justify-content: center;
